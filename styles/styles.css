@@ -1,0 +1,303 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+ 
+
+/* estilos del la barra de navegacion*/
+header {
+  background-color: #fdd835;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 2px solid #000;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+.logo-img {
+  width: 80px; /* Ajusta el tamaño del logo */
+  height: auto;
+  margin-right: 10px;
+}
+.logo-text {
+  font-size: 1.8em; /* Ajusta el tamaño del texto del logo */
+  font-weight: bold;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+nav button {
+  background: none;
+  border: none;
+  margin-left: 20px;
+  cursor: pointer;
+  font-size: 1em; /* Ajusta el  tamaño del texto de los botones */
+  display: flex;
+  align-items: center;
+}
+nav button:hover {
+  text-decoration: underline;
+}
+.icon {
+  width: 24px; /* Ajusta el tamaño del icono */
+  height: 24px;
+  margin-right: 5px;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+
+/* estilos de el login y register */
+.login-register {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 20px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.register-form {
+  background: #fff;
+  border: 3px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(238, 216, 18, 0.1);
+  width: 400px;
+}
+.register-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font: oblique bold 120% cursive;
+}
+.role-selection {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font: oblique bold 120% cursive;
+}
+.form-group {
+  margin-bottom: 20px;
+  font: oblique bold 110% cursive;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font: oblique bold 100% cursive;
+}
+.form-group input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font: oblique bold 80% cursive;
+}
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+}
+.form-actions button {
+  background-color: white;
+  border: calc(10% 20px);
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font: oblique bold 80% cursive;
+}
+.form-actions button:hover {
+  background-color: #e6b800;
+}
+
+
+/* estilos de perfil */
+.profile {
+  max-width: 600px; /* Ajusta el ancho máximo del perfil */
+  width: 100%;
+  text-align: center;
+  border: 2px solid #000;
+  padding: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+.user-info {
+  display: flex;
+  align-items: flex-start; /* Alinea el contenido al inicio para que el título quede arriba */
+  margin-bottom: 20px;
+  border: 2px solid #000;
+  padding: 10px;
+  background-color: #fff; /* Fondo blanco para el contenedor del usuario */
+}
+.avatar {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 20px;
+  background-color: #ddd;
+}
+.avatar img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.user-details {
+  text-align: left;
+  flex: 1; /* Permite que los detalles ocupen el resto del espacio disponible */
+}
+.user-details h2 {
+  margin: 0 0 10px 0; /* Añadir un pequeño margen inferior debajo del título */
+}
+.user-details p {
+  margin: 5px 0; /* Ajusta el espacio entre párrafos */
+}
+.user-inf{
+  margin-bottom: 20px;
+  border: 2px solid #000;
+  padding: 10px;
+  background-color: #fff;
+}
+
+
+/* estlios de contenedores de los libros */
+.book-history {
+  text-align: left;
+  border: 2px solid #000;
+  padding: 10px;
+}
+.book-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  border: 2px solid #000;
+  padding: 10px;
+  justify-content: space-between; /* Asegura que el contenido esté espaciado adecuadamente */
+}
+.book-details {
+  text-align: left;
+  flex: 1; /* Asegura que los detalles ocupen todo el espacio disponible */
+}
+.book-thumbnail {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ddd;
+  margin-left: 20px; /* Espacio entre detalles y miniatura */
+}
+.book-thumbnail-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+/* estilos del catalogo */
+.catalog {
+  max-width: 1200px;
+  width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 2px solid #000;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.catalog-grid-container {
+  max-height: 500px; /* Altura máxima del contenedor */
+  overflow-y: auto; /* Scroll vertical */
+}
+
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding-right: 10px; /* Espacio adicional para scrollbar */
+}
+
+.catalog-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 2px solid #000;
+  padding: 15px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  background-color: #f9f9f9;
+}
+
+.catalog-item:hover {
+  transform: scale(1.05);
+}
+
+.catalog-thumbnail {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ddd;
+  border-radius: 10px;
+}
+
+.catalog-thumbnail img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.catalog-details h2 {
+  margin: 10px 0;
+  font-size: 1.2em;
+  color: #000;
+}
+
+.catalog-details p {
+  margin: 5px 0;
+  color: #555;
+}
+
+
+/* estilos pagina de libros */
+.page-book {
+  max-width: 800px;
+  width: 100%;
+  border: 2px solid #000;
+  padding: 20px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+  background-color: #fff;
+}
+
+.book-info, .details-book, .availability {
+  border: 2px solid #000;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+}
+
+
+footer {
+  background-color: #fdd835;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.9em; /* Ajustar tamaño de fuente del pie de página */
+  border-top: 2px solid #000;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">    
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="/img/Icono_logoautobooks.png" alt="Logo" class="logo-img">
+            <div class="logo-text">Autobooks</div>
+        </div>
+        <nav>
+            <button id="menuButton" onclick="window.location.href='menu.html'">
+                <img src="/img/icono_menu.png" class="icon"> MENU
+            </button>
+            <button id="catalogButton" onclick="window.location.href='catalogo.html'">
+                <img src="/img/icono_catalogo.png" class="icon">CATÁLOGO
+            </button>
+            <button id="profileButton" onclick="window.location.href='perfil.html'">
+                <img src="/img/icono_perfil.png" class="icon"> PERFIL
+            </button>
+        </nav>
+    </header>
+    <main>
+        <section class="page-book">
+            <h1>libro1</h1> <!-- esto cambia por el nombre del libro traido por base de datos -->
+            <div class="book-info">
+                <h2>libro</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat consectetur
+                    soluta omnis incidunt iure distinctio aut ad eveniet? Perferendis reprehenderit
+                    dolores possimus aperiam amet molestias, maxime excepturi iusto asperiores incidunt.
+                </p><!-- esto cambia por el libro traido por base de datos -->
+            </div>
+            <div class="details-book">
+                <h2>FICHA BIBLIOGRÁFICA</h2>
+                <p><strong>Nombre del autor:</strong> ****** ***** ****</p><!-- esto cambia por el libro traido por base de datos -->
+                <p><strong>Edición:</strong> ***** **** ****</p><!-- esto cambia por el libro traido por base de datos -->
+                <p><strong>Editorial:</strong> ****** **** ****</p><!-- esto cambia por el libro traido por base de datos -->
+                <p><strong>Páginas:</strong> ****** **** ****</p><!-- esto cambia por el libro traido por base de datos -->
+            </div>
+            <div class="availability">
+                <h2>CANTIDAD Y DISPONIBILIDAD</h2>
+                <p><strong>Cantidad total:</strong> 2</p><!-- esto cambia por el libro traido por base de datos -->
+                <p><strong>Disponibles:</strong> 1</p><!-- esto cambia por el libro traido por base de datos -->
+                <button>pedir préstamo</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Autobooks. Todos los derechos reservados.</p>
+    </footer>
+    <script src="scriptsperfillibros.js"></script>
+</body>
+</html>

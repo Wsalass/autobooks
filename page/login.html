@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicia sesión</title>
+    <link rel="stylesheet" href="/styles/styles.css">                                
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">                              
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="/img/Icono_logoautobooks.png" alt="Logo" class="logo-img">     
+            <div class="logo-text">Autobooks</div>
+        </div>
+    </header>
+    
+    <div class="login-register">                 
+        <form class="register-form">
+            <h2>Inicia Sesión</h2>    
+            <div class="role-selection">
+                <label>
+                    <input type="radio" name="role" value="Instructor"> Instructor
+                </label>
+                <label>
+                    <input type="radio" name="role" value="Aprendiz"> Aprendiz   
+                <label>
+                    <input type="radio" name="role" value="Funcionarios"> Funcionarios
+                </label>
+            </div>
+            <div class="form-group">         
+                <label for="name">Nombres y Apellidos:</label>       
+                <input type="text" id="name" name="name" placeholder="Usuario" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" placeholder="Crea una contraseña" required>
+            </div>
+            <div class="form-actions">
+                <button onclick="window.location.href='register.html'" type="submit">Crear usuario</button>
+                <button onclick="window.location.href='menu.html'" type="submit">Inico sesion</button> 
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Autobooks. Todos los derechos reservados.</p>
+    </footer>
+    <script src="scriptb.js"></script>
+</body>
+</html>

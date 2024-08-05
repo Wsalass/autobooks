@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfil de Usuario</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">    
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img src="/img/Icono_logoautobooks.png" alt="Logo" class="logo-img" />
+        <div class="logo-text">Autobooks</div>
+      </div>
+      <nav>
+        <button id="menuButton" onclick="window.location.href='menu.html'">
+          <img src="/img/icono_menu.png" class="icon"> MENU
+      </button>
+        <button id="catalogButton" onclick="window.location.href='catalogo.html'">
+          <img src="/img/icono_catalogo.png"  class="icon"/>CATÁLOGO
+        </button>
+        <button id="profileButton" onclick="window.location.href='perfil.html'">
+          <img src="/img/icono_perfil.png" class="icon"> PERFIL
+      </button>
+      </nav>
+    </header>
+    <main>
+      <section class="profile">
+        <h1>PERFIL</h1>
+        <div class="user-info">
+          <div class="avatar">
+              <img src="/img/avatar.png" alt="Avatar del Usuario">
+          </div>
+          <div class="user-details">
+              <h2>Usuario</h2>
+              <p><strong>Nombre:</strong> ****** ***** ****</p><!-- esto cambia por el usuario traido por base de datos -->
+              <p><strong>tecnico:</strong> ***** **** ****</p><!-- esto cambia por el usuario traido por base de datos -->
+              <p><strong>ficha:</strong> ****** **** ****</p><!-- esto cambia por el usuario traido por base de datos -->
+              <p><strong>numero de identificacion:</strong> ****** **** ****</p><!-- esto cambia por el usuario traido por base de datos -->
+          </div>
+      </div>
+        <div class="book-history">
+          <h2>HISTORIAL DE LIBROS</h2>
+          <div class="book-item"><!-- esto cambia por el libro traido por base de datos -->
+            <div class="book-thumbnail">
+              <img class="book-thumbnail-img"  src="/img/libro1.jpg" alt="Libro 1">
+            </div>
+            <div class="book-details">
+              <p>****** **** ****</p>
+              <p>****** **** ****</p>
+            </div>
+          </div>
+          <div class="book-item"><!-- esto cambia por el libro traido por base de datos -->
+            <div class="book-thumbnail">
+              <img class="book-thumbnail-img"  src="/img/libro2.jpg" alt="Libro 2">
+            </div>
+            <div class="book-details">
+              <p>****** **** ****</p>
+              <p>****** **** ****</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Autobooks. Todos los derechos reservados.</p>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>
