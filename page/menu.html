@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Autobooks - Menú</title>
     <link rel="stylesheet" href="/styles/styles.css">
-    <link rel="icon" type="image/x-icon" href="img/favicon.png">    
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
 </head>
 <body>
     <header>
@@ -14,11 +14,14 @@
             <div class="logo-text">Autobooks</div>
         </div>
         <nav>
+            <button id="menuButton" onclick="window.location.href='login.html'">
+                <img src="/img/icono_inicio.png" class="icon"> INICIO DE SESION
+            </button>
             <button id="menuButton" onclick="window.location.href='menu.html'">
-                <img src="/img/icono_menu.png" class="icon"> MENU
+                <img src="/img/icono_menu.png" class="icon"> MENÚ
             </button>
             <button id="catalogButton" onclick="window.location.href='catalogo.html'">
-                <img src="/img/icono_catalogo.png" class="icon">CATÁLOGO
+                <img src="/img/icono_catalogo.png" class="icon"> CATÁLOGO
             </button>
             <button id="profileButton" onclick="window.location.href='perfil.html'">
                 <img src="/img/icono_perfil.png" class="icon"> PERFIL
@@ -29,11 +32,11 @@
     <main>
         <section id="menu">
             <div class="user-inf">
-                <h2>usuario</h2><!-- esto cambia por el nombre del usuario traido por base de datos -->
+                <h2>Usuario</h2><!-- esto cambia por el nombre del usuario traido por base de datos -->
                 <p>Cantidad de libros prestados actualmente: 2</p><!-- esto cambia por el libro traido por base de datos -->
             </div>
-            <div class="book-history">
-                <h2>HISTORIAL DE LIBROS</h2>
+            <div class="book-history-menu">
+                <h2>HISTORIAL DE LIBROS VISTOS</h2>
                 <div class="book-item">
                     <div class="book-details">
                         <h3 onclick="window.location.href='libros.html'">Libro 1</h3><!-- esto cambia por el libro traido por base de datos -->
@@ -58,6 +61,7 @@
                         <img onclick="window.location.href='libros.html'" class="book-thumbnail-img" src="/img/libro2.jpg" alt="Libro 2">
                     </div>
                 </div>
+                
             </div>
         </section>
     </main>

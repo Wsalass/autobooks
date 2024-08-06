@@ -1,12 +1,13 @@
+
 html,
 body {
   height: 100%;
-  margin: 0;
+  margin: 0%;
   font-family: Arial, sans-serif;
+  font: oblique bold 100% cursive;
 }
- 
 
-/* estilos del la barra de navegacion*/
+/* estilos del la barra de navegacion */
 header {
   background-color: #fdd835;
   display: flex;
@@ -20,12 +21,12 @@ header {
   align-items: center;
 }
 .logo-img {
-  width: 80px; /* Ajusta el tamaño del logo */
+  width: 80px; 
   height: auto;
   margin-right: 10px;
 }
 .logo-text {
-  font-size: 1.8em; /* Ajusta el tamaño del texto del logo */
+  font-size: 1.8em; 
   font-weight: bold;
 }
 nav {
@@ -37,15 +38,16 @@ nav button {
   border: none;
   margin-left: 20px;
   cursor: pointer;
-  font-size: 1em; /* Ajusta el  tamaño del texto de los botones */
+  font-size: 1em; 
   display: flex;
   align-items: center;
+  font: oblique bold 100% cursive;
 }
 nav button:hover {
   text-decoration: underline;
 }
 .icon {
-  width: 24px; /* Ajusta el tamaño del icono */
+  width: 24px; 
   height: 24px;
   margin-right: 5px;
 }
@@ -55,7 +57,34 @@ main {
   align-items: center;
   padding: 20px;
 }
-
+.welcome-container {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: calc(100vh - 140px); 
+}
+.welcome-container h1 {
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+.welcome-container p {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
+.cta-button {
+  background-color: white;
+  border: 10%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font: oblique bold 80% cursive;
+}
+.cta-button:hover {
+  background-color: #e6b800;
+}
 
 /* estilos de el login y register */
 .login-register {
@@ -66,13 +95,13 @@ main {
   padding: 20px;
   margin-top: 5%;
   margin-bottom: 5%;
+  height: calc(100vh - 140px);
 }
 .register-form {
-  background: #fff;
   border: 3px solid #ccc;
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(238, 216, 18, 0.1);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.623);
   width: 400px;
 }
 .register-form h2 {
@@ -96,7 +125,7 @@ main {
   font: oblique bold 100% cursive;
 }
 .form-group input {
-  width: calc(100% - 20px);
+  width: 100% - 20px;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -108,7 +137,7 @@ main {
 }
 .form-actions button {
   background-color: white;
-  border: calc(10% 20px);
+  border: 10%;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
@@ -119,24 +148,23 @@ main {
   background-color: #e6b800;
 }
 
-
 /* estilos de perfil */
 .profile {
-  max-width: 600px; /* Ajusta el ancho máximo del perfil */
+  max-width: 600px; 
   width: 100%;
   text-align: center;
-  border: 2px solid #000;
+  border: 3px solid #929292;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.623);
+  border-radius: 10px;
   padding: 20px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-  background-color: white;
 }
 .user-info {
   display: flex;
-  align-items: flex-start; /* Alinea el contenido al inicio para que el título quede arriba */
+  align-items: flex-start; 
   margin-bottom: 20px;
-  border: 2px solid #000;
+  border: 3px solid #929292;
+  border-radius: 10px;
   padding: 10px;
-  background-color: #fff; /* Fondo blanco para el contenedor del usuario */
 }
 .avatar {
   width: 100px;
@@ -153,39 +181,37 @@ main {
 }
 .user-details {
   text-align: left;
-  flex: 1; /* Permite que los detalles ocupen el resto del espacio disponible */
+  flex: 1; 
 }
-.user-details h2 {
-  margin: 0 0 10px 0; /* Añadir un pequeño margen inferior debajo del título */
-}
-.user-details p {
-  margin: 5px 0; /* Ajusta el espacio entre párrafos */
-}
-.user-inf{
+.user-inf {
   margin-bottom: 20px;
-  border: 2px solid #000;
+  border: 3px solid #929292;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.623);
+  border-radius: 10px;
   padding: 10px;
-  background-color: #fff;
 }
-
-
-/* estlios de contenedores de los libros */
-.book-history {
+.book-history-menu {
   text-align: left;
-  border: 2px solid #000;
+  align-items: flex-start; 
+  margin-bottom: 20px;
+  border: 3px solid #929292;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.623);
+  border-radius: 10px;
   padding: 10px;
+  justify-content: space-between;  
 }
 .book-item {
   display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-  border: 2px solid #000;
+  align-items: flex-start; 
+  margin-bottom: 20px;
+  border: 3px solid #929292;
+  border-radius: 10px;
   padding: 10px;
-  justify-content: space-between; /* Asegura que el contenido esté espaciado adecuadamente */
+  justify-content: space-between; 
 }
 .book-details {
   text-align: left;
-  flex: 1; /* Asegura que los detalles ocupen todo el espacio disponible */
+  flex: 1; 
 }
 .book-thumbnail {
   width: 80px;
@@ -195,7 +221,9 @@ main {
   align-items: center;
   justify-content: center;
   background-color: #ddd;
-  margin-left: 20px; /* Espacio entre detalles y miniatura */
+  margin-right: 10px;
+  margin-left: 10px;
+  cursor: pointer;
 }
 .book-thumbnail-img {
   width: 100%;
@@ -203,31 +231,27 @@ main {
   object-fit: cover;
 }
 
-
 /* estilos del catalogo */
 .catalog {
   max-width: 1200px;
   width: 100%;
-  margin: 20px auto;
+  margin: 45px auto;
   padding: 20px;
   background-color: #fff;
-  border: 2px solid #000;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  border: 3px solid #929292;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.623);
   border-radius: 10px;
 }
-
 .catalog-grid-container {
-  max-height: 500px; /* Altura máxima del contenedor */
-  overflow-y: auto; /* Scroll vertical */
+  max-height: 500px; 
+  overflow-y: auto; 
 }
-
 .catalog-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
-  padding-right: 10px; /* Espacio adicional para scrollbar */
+  padding-right: 10px;
 }
-
 .catalog-item {
   display: flex;
   flex-direction: column;
@@ -239,11 +263,9 @@ main {
   transition: transform 0.3s;
   background-color: #f9f9f9;
 }
-
 .catalog-item:hover {
   transform: scale(1.05);
 }
-
 .catalog-thumbnail {
   width: 150px;
   height: 150px;
@@ -254,24 +276,20 @@ main {
   background-color: #ddd;
   border-radius: 10px;
 }
-
 .catalog-thumbnail img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
-
 .catalog-details h2 {
   margin: 10px 0;
   font-size: 1.2em;
   color: #000;
 }
-
 .catalog-details p {
   margin: 5px 0;
   color: #555;
 }
-
 
 /* estilos pagina de libros */
 .page-book {
@@ -282,14 +300,12 @@ main {
   box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
   background-color: #fff;
 }
-
 .book-info, .details-book, .availability {
   border: 2px solid #000;
   padding: 10px;
   margin-bottom: 20px;
   background-color: #f5f5f5;
 }
-
 
 footer {
   background-color: #fdd835;
@@ -298,6 +314,61 @@ footer {
   position: relative;
   bottom: 0;
   width: 100%;
-  font-size: 0.9em; /* Ajustar tamaño de fuente del pie de página */
+  font-size: 0.9em;
   border-top: 2px solid #000;
+}
+
+
+@media (max-width: 660px) {
+  .logo-text {
+    font-size: 1.5em;
+  }
+  
+  .register-form {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .profile, .catalog, .page-book {
+    width: 95%;
+    padding: 10px;
+  }
+  
+  .user-info {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .avatar {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .book-history-menu, .book-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .book-thumbnail {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .catalog-item {
+    width: 100%;
+  }
+  
+  .catalog-thumbnail {
+    width: 120px;
+    height: 120px;
+  }
+  
+  nav {
+    flex-direction: column;
+  }
+  
+  nav button {
+    margin-left: 0;
+    margin-top: 10px;
+  }
 }
