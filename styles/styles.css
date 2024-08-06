@@ -5,6 +5,7 @@ body {
   margin: 0%;
   font-family: Arial, sans-serif;
   font: oblique bold 100% cursive;
+  background-image :url(/img/background.jpg);
 }
 
 /* estilos del la barra de navegacion */
@@ -62,7 +63,7 @@ main {
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.623);
   height: calc(100vh - 140px); 
 }
 .welcome-container h1 {
@@ -96,6 +97,7 @@ main {
   margin-top: 5%;
   margin-bottom: 5%;
   height: calc(100vh - 140px);
+  
 }
 .register-form {
   border: 3px solid #ccc;
@@ -103,6 +105,7 @@ main {
   padding: 20px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.623);
   width: 400px;
+  background-color: #fff;
 }
 .register-form h2 {
   text-align: center;
@@ -154,6 +157,7 @@ main {
   width: 100%;
   text-align: center;
   border: 3px solid #929292;
+  background-color: #fff;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.623);
   border-radius: 10px;
   padding: 20px;
@@ -187,6 +191,7 @@ main {
   margin-bottom: 20px;
   border: 3px solid #929292;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.623);
+  background-color: #fff;
   border-radius: 10px;
   padding: 10px;
 }
@@ -196,6 +201,7 @@ main {
   margin-bottom: 20px;
   border: 3px solid #929292;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.623);
+  background-color: #fff;
   border-radius: 10px;
   padding: 10px;
   justify-content: space-between;  
